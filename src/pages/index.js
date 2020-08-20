@@ -1,13 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+import Layout from "../components/layout"
 
 export default function Home() {
   return (
-    <div style={{ color: `purple` }}>
-      <Link to="/contact/">Contact</Link>
-      <h1>Hello Gatsby!</h1>
-      <p>What a world.</p>
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
+    <Layout>
+      <h3>Let's do it</h3>
+      <p>
+        What do I like to do? Lots of course but definitely enjoy building
+        websites.
+      </p>
+      <hr></hr>
+      <h3>What a world.</h3>
+      <img src="https://source.unsplash.com/random/600x400" alt="" />
+    </Layout>
   );
 }
