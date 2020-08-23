@@ -6,9 +6,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Pandas Eating Lots`,
-    description: `A simple description about pandas eating lots...`,
-    author: `gatsbyjs`,
+    title: `Pandas is fun`,
+    description: `A simple description about pandas`,
+    author: `Chee`,
+    siteUrl: `https://www.cwng.us`, // Change in case no longer https in the future
   },
 
   plugins: [
@@ -29,7 +30,7 @@ module.exports = {
       options: {
         name: `cwng`,
         short_name: `cwng`,
-        description: `The application does cool things`,
+        description: `The application does cool things. Dedicated to web technology.`,
         lang: `en`,
         start_url: `/`,
         background_color: `#6b37bf`,
@@ -63,5 +64,8 @@ module.exports = {
     `gatsby-plugin-offline`,
     // React Helmet is a package that provides a React component interface for you to manage your document head.
     `gatsby-plugin-react-helmet`,
+    // An XML sitemap lists a website’s important pages, making sure search engines (such as Google) can find and crawl them all. 
+    // In effect, a sitemap helps a search engine understand your website structure.
+    `gatsby-plugin-sitemap`,
   ],
 }

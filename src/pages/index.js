@@ -17,7 +17,7 @@ export default function Home({ data }) {
             border-bottom: 1px solid;
           `}
         >
-          Amazing Pandas Eating Things
+          Amazing Pandas
         </h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -37,10 +37,11 @@ export default function Home({ data }) {
                 {node.frontmatter.title}{" "}
                 <span
                   css={css`
-                    color: #808080;
+                    color: #FF9966;
+                    font-size: 20px;
                   `}
                 >
-                  — {node.frontmatter.date}
+                  - {node.frontmatter.date}
                 </span>
               </h3>
               {/* This is text description */}
