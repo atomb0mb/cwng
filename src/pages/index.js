@@ -22,7 +22,8 @@ export default function Home({ data }) {
         >
           Amazing Pandas
         </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+        <h2>Posts</h2>
+        {/* <h4>{data.allMarkdownRemark.totalCount} Posts</h4> */}
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
