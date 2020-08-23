@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 // This show the files information
 export default function MyFiles({ data }) {
-  console.log(data)
+  //console.log(data)
   return (
     <Layout>
       <div>

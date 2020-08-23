@@ -19,7 +19,7 @@ function SEO({ description, lang, meta, title }) {
       }
     `
   )
-
+    // more config in the future
   const metaDescription = description || site.siteMetadata.description
 
   return (

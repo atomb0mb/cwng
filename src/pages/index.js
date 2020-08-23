@@ -3,13 +3,16 @@ import { Link, graphql } from "gatsby"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 
 //Home display
 export default function Home({ data }) {
-  console.log(data)
+  //console.log(data)
+  const page = data.site.siteMetadata;
   return (
     <Layout>
+      <SEO title={page.title} description={page.description} />
       <div>
         <h1
           css={css`
@@ -70,6 +73,12 @@ export const query = graphql`
           }
           excerpt
         }
+      }
+    }
+    site {
+      siteMetadata {
+        description
+        title
       }
     }
   }
