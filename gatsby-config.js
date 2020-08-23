@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Pandas is fun`,
-    description: `A simple description about pandas`,
+    title: `Panda`,
+    description: `Pandas are simple. Pandas eat fast, they eat a lot, and they spend about 12 hours a day doing it.`,
     author: `Chee`,
     siteUrl: `https://www.cwng.us`, // Change in case no longer https in the future
   },
@@ -48,6 +48,12 @@ module.exports = {
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
         icon: `src/images/android-chrome-512x512.png`, // This path is relative to the root of the site.
+        icon_options: {
+          // For all the options available, please see:
+          // https://developer.mozilla.org/en-US/docs/Web/Manifest
+          // https://w3c.github.io/manifest/#purpose-member
+          purpose: "any maskable",
+        },
       },
     },
     // The filesystem source plugin knows how to fetch data from the file system. 
