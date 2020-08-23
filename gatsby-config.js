@@ -27,8 +27,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `cwng`,
+        short_name: `cwng`,
+        description: `The application does cool things`,
+        lang: `en`,
         start_url: `/`,
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
@@ -46,6 +48,14 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+
+    // css customization
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "src/utils/typography",
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     // Gatsby’s offline plugin makes a Gatsby site work offline 
@@ -53,11 +63,5 @@ module.exports = {
     `gatsby-plugin-offline`,
     // React Helmet is a package that provides a React component interface for you to manage your document head.
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: "src/utils/typography",
-      },
-    },
   ],
 }

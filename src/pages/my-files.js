@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
+// This show the files information
 export default function MyFiles({ data }) {
   console.log(data)
   return (

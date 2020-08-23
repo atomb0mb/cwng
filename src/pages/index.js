@@ -4,6 +4,8 @@ import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 
+
+//Home display
 export default function Home({ data }) {
   console.log(data)
   return (
@@ -35,7 +37,7 @@ export default function Home({ data }) {
                 {node.frontmatter.title}{" "}
                 <span
                   css={css`
-                    color: #bbb;
+                    color: #808080;
                   `}
                 >
                   — {node.frontmatter.date}
