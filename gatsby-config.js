@@ -13,6 +13,15 @@ module.exports = {
   },
 
   plugins: [
+    // robots.txt
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.cwng.us',
+        sitemap: 'https://www.cwng.us/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
 
     // Google Analytics plugins
     {
