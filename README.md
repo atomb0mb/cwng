@@ -33,6 +33,8 @@ npm install --save gatsby-plugin-google-analytics
 
 npm install --save gatsby-plugin-sitemap
 
+npm install --save gatsby-plugin-preload-fonts
+
 Usually if npm run build fails, check console output for details of missing plugin or package.
 
 ## Build and Serve for Audits
