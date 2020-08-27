@@ -12,7 +12,7 @@ export default function Home({ data }) {
   const page = data.site.siteMetadata;
   return (
     <Layout>
-      <SEO title={page.title} description={page.description} />
+      <SEO title='Home' description={page.description} />
       <div>
         <h1
           css={css`
