@@ -72,6 +72,11 @@ module.exports = {
         pathToConfigModule: "src/utils/typography",
       },
     },
+    //Gatsby plugin for preparing zopfli-compressed gzip versions of assets.
+    {
+      resolve: 'gatsby-plugin-zopfli'
+    },
+
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     // Gatsby’s offline plugin makes a Gatsby site work offline 
@@ -82,8 +87,5 @@ module.exports = {
     // An XML sitemap lists a website’s important pages, making sure search engines (such as Google) can find and crawl them all. 
     // In effect, a sitemap helps a search engine understand your website structure.
     `gatsby-plugin-sitemap`,
-    // This plugin preloads all necessary fonts per route to decrease time to first meaningful paint. 
-    // It works really well with services like Google Fonts that link to stylesheets that in turn link to font files.
-    `gatsby-plugin-preload-fonts`,
   ],
 }
