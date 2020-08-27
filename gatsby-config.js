@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Panda`,
+    title: `cwng`,
     description: `Pandas are simple. Pandas eat fast, they eat a lot, and they spend about 12 hours a day doing it.`,
     author: `Chee`,
     siteUrl: `https://www.cwng.us`, // Change in case no longer https in the future
@@ -82,5 +82,8 @@ module.exports = {
     // An XML sitemap lists a website’s important pages, making sure search engines (such as Google) can find and crawl them all. 
     // In effect, a sitemap helps a search engine understand your website structure.
     `gatsby-plugin-sitemap`,
+    // This plugin preloads all necessary fonts per route to decrease time to first meaningful paint. 
+    // It works really well with services like Google Fonts that link to stylesheets that in turn link to font files.
+    `gatsby-plugin-preload-fonts`,
   ],
 }
