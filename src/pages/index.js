@@ -32,6 +32,7 @@ export default function Home({ data }) {
                 text-decoration: none;
                 color: inherit;
               `}
+              media="print"
             >
               <h3
                 css={css`
@@ -44,6 +45,7 @@ export default function Home({ data }) {
                     color: #FF9966;
                     font-size: 20px;
                   `}
+                  media="print"
                 >
                   - {node.frontmatter.date}
                 </span>
