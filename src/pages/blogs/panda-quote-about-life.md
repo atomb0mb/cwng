@@ -1,6 +1,6 @@
 ---
 title: "Kung Fu Panda Talks"
-date: "2009-04-14"
+date: "2020-08-01"
 ---
 
 Kung Fu Panda meaningful quote about life!

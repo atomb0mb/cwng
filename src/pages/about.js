@@ -10,7 +10,7 @@ export default function About({data}) {
       <SEO title='About' description={page.description} />
       <h1>About {data.site.siteMetadata.title}</h1>
       <p>
-        This site is running on your computer dedicated to showing the
+        This site is running on your computer dedicated to show the
         best photos and videos of pandas.
       </p>
     </Layout>

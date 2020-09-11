@@ -6,10 +6,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: `cwng`,
+    title: `Panda`,
     description: `Pandas are simple. Pandas eat fast, they eat a lot, and they spend about 12 hours a day doing it.`,
     author: `Chee`,
-    siteUrl: `https://www.cwng.us`, // Change in case no longer https in the future
+    siteUrl: `https://project-cwng.vercel.app/`, // Change in case no longer https in the future
   },
 
   plugins: [
@@ -17,19 +17,19 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.cwng.us',
-        sitemap: 'https://www.cwng.us/sitemap.xml',
+        host: 'https://project-cwng.vercel.app',
+        sitemap: 'https://project-cwng.vercel.app/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
 
     // Google Analytics plugins
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-175902871-1",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "",
+    //   },
+    // },
 
     // The web app manifest is a simple JSON file 
     // that tells the browser about your web application 
